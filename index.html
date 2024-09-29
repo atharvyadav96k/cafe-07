@@ -16,7 +16,7 @@
 <body>
     <div class="row">
         <div class="col-lg-3 col-md-3 col-12 box d-flex align-items-center justify-content-around border border-dark-subtle border-top-0">
-            <button class="btn p-3 bg-white btn-menu">
+            <button class="btn p-3 bg-white btn-menu" id="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -24,7 +24,7 @@
                 </svg>
             </button>
             <h1><span class="primary-text">Cafe</span><span class="text-dark">-7</span></h1>
-            <button class="btn p-3 bg-white btn-menu">
+            <button class="btn p-3 bg-white btn-menu" id="cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4"
                     viewBox="0 0 16 16">
                     <path
@@ -53,6 +53,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row" style="margin: 0px;">
+        <div class="col-lg-3 col-md-3 hideMenu content border border-dark-subtle" id="menuContainer"></div>
+        <div class="col-lg-6 col-md-6  content border border-dark-subtle" id="content"></div>
+        <div class="col-lg-3 col-md-3 hideCart content border border-dark-subtle" id="cartContainer"></div>
     </div>
     <script src="script/app.js"></script>
 </body>
