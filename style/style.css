@@ -1,0 +1,39 @@
+:root{
+    --primary: #ffa16c;
+}
+.primary-background{
+    background-color: var(--primary);
+}
+.primary-text{
+    color: var(--primary);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+  
+}
+.box:nth-child(1){
+    height: 70px;
+}
+.box:nth-child(2){
+    background-color: white;
+    padding-left: 10px;
+    height: 70px;
+}
+.box:nth-child(3){
+    height: 100vh;
+}
+@media screen and (max-width: 727px) {
+    .box:nth-child(3){
+        display: none;
+        position: absolute;
+    }
+}
+@media screen and (min-width: 727px) {
+    .btn-menu{
+        display: none;
+    }
+}
